@@ -11,7 +11,7 @@ const api = axios.create({
 
 api.interceptors.request.use(
   async (test: InternalAxiosRequestConfig) => {
-    const token = "ggwp";
+    const token = undefined;
 
     if (token && test.headers) test.headers.Authorization = `Bearer ${token}`;
 
